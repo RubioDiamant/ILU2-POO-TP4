@@ -4,12 +4,28 @@ import Produit.*;
 import personnages.Gaulois;
 import villagegaulois.Etal;
 import villagegaulois.IEtal;
+import villagegaulois.IVillage;
+import villagegauloisold.DepenseMarchand;
 
 public class Scenario {
 
 	public static void main(String[] args) {
 
-		// TODO Partie 4 : creer de la classe anonyme Village
+		private class village implements IVillage{
+
+			@Override
+			public <P extends Produit> boolean installerVendeur(Etal<P> etal, Gaulois vendeur, P[] produit, int prix) {
+				etal.installerVendeur(vendeur, produit, prix);
+				return false;
+			}
+
+			@Override
+			public DepenseMarchand[] acheterProduit(String produit, int quantiteSouhaitee) {
+				// TODO Auto-generated method stub
+				return null;
+			}
+			
+		}
 
 		// fin
 

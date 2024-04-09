@@ -12,4 +12,6 @@ public class Sanglier extends Produit{
 		this.poids = poids;
 		this.chasseur = chasseur;
 	}
+	
+	
 }

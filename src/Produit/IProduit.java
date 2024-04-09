@@ -7,5 +7,7 @@ public interface IProduit {
 	void setDescription(String description);
 
 	String getNom();
+	
+	double calculerPrix(double prix);
 
 }

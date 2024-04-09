@@ -21,5 +21,10 @@ public class Produit implements IProduit {
 	public String getNom() {
 		return nom;
 	}
+	
+	@Override
+	public double calculerPrix(double prix) {
+		return prix;
+	}
 
 }
