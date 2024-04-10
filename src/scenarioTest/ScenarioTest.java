@@ -60,6 +60,10 @@ public class ScenarioTest {
 				
 		}
 		
+		for(int i = 0; i < marche.length; i++) {
+			System.out.println(marche[i].etatEtal());
+		}
+		
 		
 		
 

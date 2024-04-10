@@ -13,6 +13,7 @@ public class Etal <P extends IProduit> implements IEtal{
 		this.vendeur = vendeur;
 		this.prix = prix;
 		this.produits = produit;
+		nbProduit = produit.length;
 	}
 	
 	@Override
@@ -49,7 +50,7 @@ public class Etal <P extends IProduit> implements IEtal{
 	chaine.append(" vend ");
 	chaine.append(nbProduit + " produits :");
 	for (int i = 0; i < nbProduit; i++) {
-	chaine.append("\n- " + produits[i].getDescription());
+	chaine.append("\n- " + produits[i].getNom());
 	}
 	} else {
 	chaine.append(" n'a plus rien à vendre.");
